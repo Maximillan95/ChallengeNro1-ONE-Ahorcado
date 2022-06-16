@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Juego del Ahorcado</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="/Imagenes/logo.svg" alt="Logo de la página">
+    </header>
+
+    <section class="contenedor-botones-inicio">
+        <button id="boton-iniciarJuego">Iniciar Juego</button>
+        <button id="boton-agregarPalabra">Agregar Nueva Palabra</button>
+    </section>
+
+    <section id="div-aparece-ahorcado"class="canvas">
+        <canvas id="horca" height="450" width="1200"></canvas>
+        <div class="contenedor-botones-canvas">
+            <button id="boton-nuevoJuego">Nuevo juego</button>
+            <button class="boton-desistir">Desistir</button>
+        </div>
+    </section>
+
+    <section class="contenedor-agregarPalabra">
+        <input class="campo-agregarTexto" type="text" placeholder="Ingrese una palabra">
+        <div class="divisor-agregarTexto">
+            <p class="condicion">Max. de 8 letras</p>
+            <button class="boton-guardar">Guardar y empezar</button>
+            <button class="boton-cancelar">Cancelar</button>
+        </div>
+    </section>
+
+
+    <footer></footer>
+    <script src="/JS/iniciar-juego.js"></script>
+    <script src="/JS/script.js"></script>
+
+</body>
+</html>

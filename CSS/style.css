@@ -1,0 +1,123 @@
+body{
+    width: 100%;
+    position: relative;
+    background-color: #F3F5FC;
+}
+#logo{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.contenedor-botones-inicio{
+    display: flex;
+    flex-direction: column;
+}
+#boton-iniciarJuego, #boton-agregarPalabra {
+    position: absolute;
+    align-self: center;
+}
+/*1er Boton*/
+#boton-iniciarJuego{
+    width: 350px;
+    background-color: #0A3871;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 10em;
+    margin-bottom: 1em;
+    padding: 24px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+#boton-iniciarJuego:hover{
+    background-color: #356EA9;
+    font-weight: bolder;
+}
+/*2do Boton*/
+#boton-agregarPalabra{
+    width: 280px;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-size: 1.2em;
+    margin-top: 17em;
+    padding: 24px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+#boton-agregarPalabra:hover{
+    background-color: #E9ECF8;
+    font-weight: bolder;
+}
+/**/
+/*Contenedor para agregar palabras*/
+.campo-agregarTexto{
+    width: 50%;
+    font-size: 30px;
+    color: #0A3871;
+    border: none;
+    text-align: center;
+    background-color: #F3F5FC;
+}
+.campo-agregarTexto:active{
+    border: none;
+}
+.contenedor-agregarPalabra, .canvas{
+    display:none;
+}
+.divisor-agregarTexto{
+    margin-top: 15em;
+}
+/*Botones*/
+.boton-guardar, .boton-cancelar, #boton-nuevoJuego, .boton-desistir{
+    width: 200px;
+}
+.boton-guardar, #boton-nuevoJuego{
+    background-color: #0A3871;
+    color: #fff;
+    font-size: 1em;
+    margin: 0.5em;
+    padding: 20px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.boton-guardar:hover, #boton-nuevoJuego:hover{
+    background-color: #356EA9;
+    font-weight: bolder;
+}
+.boton-cancelar, .boton-desistir{
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-size: 1em;
+    margin: 0.5em;
+    padding: 20px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.boton-cancelar:hover, .boton-desistir:hover{
+    background-color: #E9ECF8;
+    font-weight: bolder;
+}
+
+
+/*Eventos*/
+.ocultar{
+    display: none;
+}
+.agregarPalabra-visible{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    
+}
+
+.agregarCanvas-visible{
+    display: block;
+}
+#horca{
+    display: block;
+    /*background-color: aqua;*/
+}
+
+.contenedor-botones-canvas{
+    display: flex;
+    justify-content: center;
+}
