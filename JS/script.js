@@ -93,8 +93,6 @@ contenedorCanvas.onkeydown = (e) => {
 //**********************************************************/
 //*AGREGAR PALABRAS NUEVAS
 botonGuardar.addEventListener("click", function(){
-    /*contenedorAgregarPalabra.classList.remove("agregarPalabra-visible");
-    contenedorCanvas.classList.add("agregarCanvas-visible");*/
     agregarPalabraNueva(agregarPalabra.value);
     agregarPalabra.value="";
     console.log(palabras);
