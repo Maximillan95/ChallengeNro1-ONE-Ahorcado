@@ -6,6 +6,8 @@ var errores = 5;
 var botonNuevoJuego = document.querySelector("#boton-nuevoJuego");
 var agregarPalabra = document.querySelector(".campo-agregarTexto");
 var contenedorCanvas = document.querySelector(".canvas");
+var alertaPorCampoVacio = document.querySelector(".error-ingresePalabra");
+var ingrosóPalabraCorrectamente = document.querySelector(".ingresó-palabra");
 
 function escojerPalabraSecreta(){
     var palabra = palabras[Math.floor(Math.random()*palabras.length)];
@@ -93,9 +95,17 @@ contenedorCanvas.onkeydown = (e) => {
 //**********************************************************/
 //*AGREGAR PALABRAS NUEVAS
 botonGuardar.addEventListener("click", function(){
-    agregarPalabraNueva(agregarPalabra.value);
-    agregarPalabra.value="";
-    console.log(palabras);
+    if(agregarPalabra.value !== ""){
+        alertaPorCampoVacio.classList.remove("error-campoVacio-visible");
+        agregarPalabraNueva(agregarPalabra.value);
+        ingrosóPalabraCorrectamente.classList.add("ingresó-palabra-visible");
+        agregarPalabra.value="";
+        console.log(palabras);
+    }else{
+        alertaPorCampoVacio.classList.add("error-campoVacio-visible");
+        ingrosóPalabraCorrectamente.classList.remove("ingresó-palabra-visible");
+        ingrosóPalabraCorrectamente.classList.add("ingresó-palabra");
+    }
 });
 
 function agregarPalabraNueva(recibePalabra){

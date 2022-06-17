@@ -98,7 +98,7 @@ body{
 
 
 /*Eventos*/
-.ocultar{
+.ocultar, .error-ingresePalabra, .ingresó-palabra{
     display: none;
 }
 .agregarPalabra-visible{
@@ -120,4 +120,18 @@ body{
 .contenedor-botones-canvas{
     display: flex;
     justify-content: center;
+}
+.error-campoVacio-visible{
+    display: block;
+    text-align: center;
+    margin: 0.5em 0;
+    font-size: 2em;
+    color: red;
+}
+.ingresó-palabra-visible{
+    display: block;
+    text-align: center;
+    margin: 0.5em 0;
+    font-size: 2em;
+    color: green;
 }
