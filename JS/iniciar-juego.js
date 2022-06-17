@@ -1,7 +1,8 @@
 var comenzar = document.querySelector("#boton-iniciarJuego");
 var botonAgregarPalabra = document.querySelector("#boton-agregarPalabra");
 var botonCancelar = document.querySelector(".boton-cancelar");
-var botonGuardarYEmpezar = document.querySelector(".boton-guardar");
+var botonGuardar = document.querySelector(".boton-guardar");
+var botonEmpezar = document.querySelector(".boton-empezarJuego");
 var contenedorAgregarPalabra = document.querySelector(".contenedor-agregarPalabra");
 var contenedorCanvas = document.querySelector(".canvas");
 var botonesInicio = document.querySelector(".contenedor-botones-inicio");
@@ -18,7 +19,7 @@ botonAgregarPalabra.addEventListener("click", function(){
     contenedorAgregarPalabra.classList.add("agregarPalabra-visible");
 });
 
-botonGuardarYEmpezar.addEventListener("click", function(){
+botonEmpezar.addEventListener("click", function(){
     contenedorAgregarPalabra.classList.remove("agregarPalabra-visible");
     contenedorCanvas.classList.add("agregarCanvas-visible");
 });

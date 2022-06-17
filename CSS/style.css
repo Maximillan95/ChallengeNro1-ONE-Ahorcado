@@ -66,10 +66,10 @@ body{
     margin-top: 15em;
 }
 /*Botones*/
-.boton-guardar, .boton-cancelar, #boton-nuevoJuego, .boton-desistir{
+.boton-guardar,.boton-empezarJuego, .boton-cancelar, #boton-nuevoJuego, .boton-desistir{
     width: 200px;
 }
-.boton-guardar, #boton-nuevoJuego{
+.boton-guardar,.boton-empezarJuego, #boton-nuevoJuego{
     background-color: #0A3871;
     color: #fff;
     font-size: 1em;
@@ -78,7 +78,7 @@ body{
     border-radius: 24px;
     cursor: pointer;
 }
-.boton-guardar:hover, #boton-nuevoJuego:hover{
+.boton-guardar:hover,.boton-empezarJuego:hover, #boton-nuevoJuego:hover{
     background-color: #356EA9;
     font-weight: bolder;
 }
